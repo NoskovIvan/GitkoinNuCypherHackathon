@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: nucypher
+Version: 0.1.0a0
+Summary: ('A proxy re-encryption network to empower privacy in decentralized systems.',)
+Home-page: https://github.com/nucypher/nucypher
+Author: NuCypher
+Author-email: dev@nucypher.com
+License: GNU General Public License, Version 3
+Description: [![CircleCI](https://circleci.com/gh/nucypher/nucypher/tree/master.svg?style=svg)](https://circleci.com/gh/nucypher/nucypher/tree/master)
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic:: Security
+Requires-Python: >=3
+Provides-Extra: benchmark
+Provides-Extra: testing
+Provides-Extra: deployment
+Provides-Extra: docs

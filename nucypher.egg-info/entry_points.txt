@@ -1,0 +1,3 @@
+[console_scripts]
+nucypher = nucypher.cli:cli
+

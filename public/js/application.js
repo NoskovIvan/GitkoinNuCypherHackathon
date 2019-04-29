@@ -1,0 +1,22 @@
+/* Using the reconnecting-websocket library to automatically reconnect any disrupted connections in the browser */
+const HOST = location.origin.replace(/^http/, 'ws');
+const ws = new ReconnectingWebSocket(HOST);
+
+/* Function which aims to handle receive messages from server */
+ws.onmessage = function(message) {
+    var data = JSON.parse(message.data);
+    $("#chat-text").append("<div class='panel panel-default'><div class='panel-heading'>" + $('<span/>').text(data.time).html() + "</div><div class='panel-body'>" + $('<span/>').text(`Responce from NuCypher is ${data.resp}`).html() + "</div></div>");
+    $("#chat-text").stop().animate({
+      scrollTop: $('#chat-text')[0].scrollHeight
+    }, 800);
+};
+
+/* Function which aims to send messages to server */
+$("#input-form").on("submit", function(event) {
+    /* Stop the form from actually sending a POST */
+    event.preventDefault();
+    /* Grab the number from the form and send it to the server */
+    var handle = $("#input-handle")[0].value;
+    ws.send(JSON.stringify({ number: handle, time: new Date().toLocaleTimeString() }));
+    $("#input-handle")[0].value = "";
+});

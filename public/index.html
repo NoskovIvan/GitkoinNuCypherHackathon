@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>NuCypher-NodeJS</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="css/application.css" rel="stylesheet" media="screen">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <div class="container">
+      <div class="jumbotron">
+        <h1>WebSocket + Node.js + Python3.7</h1>
+        <hr />
+        <p>Using WebSocket and Node.js for Json RPC integrating with NuCypher</p>
+        <ul>
+			<li>1 - Get Policy Details</li>
+			<li>2 - Get Alice</li>
+			<li>3 - Get Bob</li>
+			<li>4 - Grant</li>
+			<li>5 - Get Data</li>
+        </ul>
+      </div>
+
+      <form id="input-form" class="form-inline">
+        <h1>Input method number</h1>
+        <div class="form-group">
+          <input id="input-handle" type="text" class="form-control" placeholder="1-5" autofocus />
+        </div>
+        <button class="btn btn-primary" type="submit">Test</button>
+      </form>
+
+      <div class="page-header">
+        <h1>NuCypher responce</h1>
+      </div>
+
+      <div id="chat-text">
+      </div>
+    </div>
+    <script type="text/javascript" src="js/jquery-2.0.3.min.js"></script>
+    <script type="text/javascript" src="js/reconnecting-websocket.min.js"></script>
+    <script type="text/javascript" src="js/application.js"></script>
+  </body>
+</html>
