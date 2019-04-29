@@ -17,7 +17,7 @@
 </ol>
 
 # Promo
-You can watch  <a href="" target="_blank">promo video</a> by link on YouTube:<br>
+You can watch  <a href="https://youtu.be/j44wKitorS8" target="_blank">promo video</a> by link on YouTube:<br>
 
 # About
 **NuCypher** is an HTTPS analog for decentralized applications. Every Hackathon NuCypher encouraged participants interesting challenges and ideas of which may turn out high-quality business-products. But any product should be comfortable for users and requires high-quality frontend. 
