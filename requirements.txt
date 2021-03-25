@@ -63,7 +63,7 @@ pysha3==1.0.2
 python-dateutil==2.7.5 ; python_version >= '2.7'
 pytz==2018.9
 pytzdata==2018.7
-pyyaml==4.2b4
+pyyaml==5.4
 regex==2018.11.22
 requests==2.21.0
 rlp==1.1.0
